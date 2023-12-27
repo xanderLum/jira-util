@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "aedff54c-1164-404a-9de1-9c2a7ce2604e",
+		"name": "Jira-POC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "2883735"
+	},
+	"item": [
+		{
+			"name": "transitionIssue",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/jira/update-issue-status/:issueKey/:newStatus",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"jira",
+						"update-issue-status",
+						":issueKey",
+						":newStatus"
+					],
+					"variable": [
+						{
+							"key": "issueKey",
+							"value": "JD-1"
+						},
+						{
+							"key": "newStatus",
+							"value": "BLOCKED"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllProjects",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/jira/update-issue-status/:issueKey/:newStatus",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"jira",
+						"update-issue-status",
+						":issueKey",
+						":newStatus"
+					],
+					"variable": [
+						{
+							"key": "issueKey",
+							"value": "JD-1"
+						},
+						{
+							"key": "newStatus",
+							"value": "BLOCKED"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getIssue",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/jira/getIssue/:issueKey",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"jira",
+						"getIssue",
+						":issueKey"
+					],
+					"variable": [
+						{
+							"key": "issueKey",
+							"value": "JD-2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
